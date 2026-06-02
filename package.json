@@ -1,0 +1,14 @@
+{
+  "name": "secure-xerox-dropbox",
+  "version": "1.0.0",
+  "description": "Privacy-focused QR-based document drop box for xerox centers",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": ["xerox", "document", "qr-code", "privacy", "dropbox"],
+  "author": "",
+  "license": "MIT"
+}

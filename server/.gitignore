@@ -1,0 +1,29 @@
+# ================================
+# Backend (Server) — Node.js / Express
+# ================================
+
+# Dependencies
+node_modules/
+
+# Environment Variables (NEVER commit these!)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Uploaded user files (stored locally, not in git)
+uploads/*
+!uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
