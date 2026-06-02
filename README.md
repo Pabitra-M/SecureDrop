@@ -46,51 +46,6 @@ Customers scan a QR code → upload documents → shop prints them. No phone num
 
 ---
 
-## 📁 Project Structure
-
-```
-secure-xerox-dropbox/
-│
-├── client/                        # React Frontend (Vite)
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── LandingPage.jsx    # Home / marketing page
-│   │   │   ├── LoginPage.jsx      # Shop login
-│   │   │   ├── RegisterPage.jsx   # Shop registration
-│   │   │   ├── DashboardPage.jsx  # Document management
-│   │   │   ├── QRCodePage.jsx     # QR code display & download
-│   │   │   └── UploadPage.jsx     # Public upload page (customer-facing)
-│   │   ├── components/
-│   │   │   └── Navbar.jsx
-│   │   ├── context/
-│   │   │   └── AuthContext.jsx    # Global auth state
-│   │   ├── api.js                 # Axios instance
-│   │   ├── App.jsx
-│   │   └── index.css              # Global design system
-│   ├── index.html
-│   ├── vite.config.js
-│   └── package.json
-│
-└── server/                        # Node.js Backend (Express)
-    ├── models/
-    │   ├── XeroxCenter.js         # Shop schema
-    │   └── Document.js            # Document schema (TTL enabled)
-    ├── routes/
-    │   ├── authRoutes.js          # Register / Login
-    │   ├── centerRoutes.js        # Profile & QR code
-    │   └── documentRoutes.js      # Upload, list, download, delete
-    ├── middleware/
-    │   ├── authMiddleware.js      # JWT verification
-    │   └── uploadMiddleware.js    # Multer config & file validation
-    ├── uploads/                   # Uploaded files (local, git-ignored)
-    ├── .env.example               # Environment variable template
-    ├── .env                       # Your secrets (never commit this!)
-    ├── server.js
-    └── package.json
-```
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -104,8 +59,8 @@ secure-xerox-dropbox/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/secure-xerox-dropbox.git
-cd secure-xerox-dropbox
+git clone https://github.com/your-username/SecureDrop.git
+cd SecureDrop
 ```
 
 ---
@@ -299,10 +254,6 @@ When hosting on a real server (Render, Railway, Vercel, etc.):
 - [ ] OTP token for customers to track their print job
 
 ---
-
-## 📄 License
-
-MIT License — free to use, modify, and distribute.
 
 ---
 
